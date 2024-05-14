@@ -1,11 +1,11 @@
 clear, clc, close all;
 
 % menu interface
-title = 'Miniproject MCEE 21/21';
-str = {'Numerical solving of equations', 'Select a Method'};
-list = {'Bisections', 'Newton-Raphson', 'Secant'};
+title = 'Miniproject MCEE 2023/2024';
+str = {'Análise de circuitos', 'Por favor escolha o tipo de circuito:'};
+list = {'RC', 'RL', 'RLC'};
 method = listdlg('Name', title, 'PromptString', str, ...
-    'ListSize', [270 45], 'ListString', list, 'SelectionMode', 'single');
+    'ListSize', [370 60], 'ListString', list, 'SelectionMode', 'single');
 if isempty(method)
     return
 end
